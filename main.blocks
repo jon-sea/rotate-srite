@@ -1,0 +1,20 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="SpriteKindLegacy" id="5)@4zc_/i-sJ9g;KU[nu">0Player</variable><variable type="SpriteKindLegacy" id=";p-p@6MxM1I4J2J[ZcyX">1Projectile</variable><variable type="SpriteKindLegacy" id=":hCsOg|km85l-8@b~@tu">2Food</variable><variable type="SpriteKindLegacy" id=")xKVP4.kt;x|k;lI?x*G">3Enemy</variable><variable id="w7@]oTLvR3].{~J/$90d">mySprite</variable><variable id="9L~P7Qn99C-zq1?[DsN/">rotationIncrement</variable></variables><block type="pxt-on-start" x="0" y="0"><statement name="HANDLER"><block type="variables_set"><field name="VAR" id="w7@]oTLvR3].{~J/$90d">mySprite</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . 
+. . 1 1 . . . . . . . . . . 1 1 . . 
+. . 1 1 . . . . . . . . . . 1 1 . . 
+. . . . 1 . . . . . . . . 1 . . . . 
+. . . . . 1 . . . . . . 1 . . . . . 
+. . . . . . 1 . . . . 1 . . . . . . 
+. . . . . . . 1 . . 1 . . . . . . . 
+. . . . . . . . 1 1 . . . . . . . . 
+. . . . . . . . 1 1 . . . . . . . . 
+. . . . . . . 1 . . 1 . . . . . . . 
+. . . . . . 1 . . . . 1 . . . . . . 
+. . . . . 1 . . . . . . 1 . . . . . 
+. . . . 1 . . . . . . . . 1 . . . . 
+. . 1 1 . . . . . . . . . . 1 1 . . 
+. . 1 1 . . . . . . . . . . 1 1 . . 
+. . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"/><block type="spritetype"><field name="MEMBER">Player</field></block></value></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="w7@]oTLvR3].{~J/$90d">mySprite</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">16</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">16</field></shadow></value><next><block type="variables_set"><field name="VAR" id="9L~P7Qn99C-zq1?[DsN/">rotationIncrement</field><value name="VALUE"><shadow type="math_number"><field name="NUM">10</field></shadow></value></block></next></block></next></block></statement></block><block type="variables_get" disabled="true" x="1020" y="110"><field name="VAR" id="9L~P7Qn99C-zq1?[DsN/">rotationIncrement</field></block><block type="keyonevent" x="10" y="250"><field name="button">controller.right</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="transform_change_rotation"><value name="sprite"><shadow type="variables_get"><field name="VAR" id="w7@]oTLvR3].{~J/$90d">mySprite</field></shadow></value><value name="angleChange"><block type="variables_get"><field name="VAR" id="9L~P7Qn99C-zq1?[DsN/">rotationIncrement</field></block></value></block></statement></block><block type="keyonevent" x="10" y="390"><field name="button">controller.left</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="transform_change_rotation"><value name="sprite"><shadow type="variables_get"><field name="VAR" id="w7@]oTLvR3].{~J/$90d">mySprite</field></shadow></value><value name="angleChange"><block type="math_arithmetic"><field name="OP">MINUS</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow></value><value name="B"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get"><field name="VAR" id="9L~P7Qn99C-zq1?[DsN/">rotationIncrement</field></block></value></block></value></block></statement></block></xml>
